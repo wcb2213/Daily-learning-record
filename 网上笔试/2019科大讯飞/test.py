@@ -14,15 +14,21 @@
 #                             # 2 分隔成三个
 
 
-import math
-s = input()
-L = []
-for i in s.split():
-    L.append(int(i))
-n = L[0]
-m = L[1]
-L2 = []
-for i in range(m):
-    L2.append(n)
-    n = math.sqrt(n)
-print('%.2f' % sum(L2))
+# import math
+# s = input()
+# L = []
+# for i in s.split():
+#     L.append(int(i))
+# n = L[0]
+# m = L[1]
+# L2 = []
+# for i in range(m):
+#     L2.append(n)
+#     n = math.sqrt(n)
+# print('%.2f' % sum(L2))
+
+# print('''we are
+#       hh ''')
+
+if 100<=111<=123:
+    print(pow(2,3))
