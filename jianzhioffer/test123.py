@@ -17,5 +17,5 @@ a = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 b = [[0 for i in range(3)] for i in range(3)]
 print(a, b)
 
-print(len(a))
+print(len(a[1]))
 
