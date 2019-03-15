@@ -131,6 +131,14 @@
 # （6）长度、最大最小值
 # 通过内建函数len、max和min可以返回序列中所包含元素的数量、最大和最小元素。
 
-d={}
-d[1]=2
-print(d)
+# d={}
+# d[1]=2
+# print(d)
+
+L = []
+if L:
+    print(1)
+if L is not None:
+    print(2)
+if L != None:
+    print(3)

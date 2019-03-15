@@ -13,9 +13,13 @@
 
 
 ## 创建二维数组
-a = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
-b = [[0 for i in range(3)] for i in range(3)]
-print(a, b)
+# a = [[0, 0, 0], [1, 2, 3, 4]] #### a的元素为数列 和矩阵不同
+#
+# print(a)
+# print(len(a))
+# print(a[0])
+# print(a[1])
 
-print(len(a[1]))
+
+print((4+1)//2)
 
