@@ -14,7 +14,7 @@
 def trim(s):
     while s[:1]==' ':
         s=s[1:]
-    while s[-1:]==' ':
+    while s[-1:]==' ':  ## 取最后一个数 即L[-1]
         s=s[:-1] # 取第一个数到最后第二个数
     return s
 
@@ -32,20 +32,20 @@ def trim(s):
 #             max = i
 #     return(min,max)
 
-# def findMinAndMax(L):
-#     if L == []:
-#         return(None,None)
-#     else:
-#         for a in L:
-#             for b in L:
-#                 if a == min(L) and b == max(L):
-#                     return(a,b)
-
 def findMinAndMax(L):
     if L == []:
         return(None,None)
     else:
-        return(min(L),max(L))
+        for a in L:
+            for b in L:
+                if a == min(L) and b == max(L):
+                    return(a,b)
+
+# def findMinAndMax(L):
+#     if L == []:
+#         return(None,None)
+#     else:
+#         return(min(L),max(L))
 
 
 # 3 列表生成式
@@ -53,12 +53,12 @@ def findMinAndMax(L):
 L1 = ['Hello', 'World', 18, 'Apple', None]
 # L2 = [s.lower() for s in L1 if type(s) == type('')]
 L2 = [s.lower() for s in L1 if isinstance(s,(str))]
-L3 = [str(s).lower() for s in L if isinstance(s, (str, int))]
+L3 = [str(s).lower() for s in L1 if isinstance(s, (str, int))]
 
 
 # 4 生成器
-# 第一种 列表生成式的[]改成()
-# 第二种 函数 print改成yield
+第一种 列表生成式的[]改成()
+第二种 函数 print改成yield
 
 # def triangles(max):
 #     L2 = [1]
@@ -82,7 +82,10 @@ def triangles():
         for i in range(1,n-1):
             L2[i] = L1[i]+L1[i-1]
         L2.append(1)
-
+a = triangles(5)
+for i in a:
+    print(i)
+    ## or next(a)
 
 # 5 迭代器
 
