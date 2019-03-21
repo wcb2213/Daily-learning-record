@@ -4,4 +4,8 @@
 # Created on: 2019/3/17
 
 
-print(int((6/2)+1))
+str="ooo...o"
+sub='o'
+print ("str.count('o') : ", str.count(sub, 0, 7)) # 4
+print ("str.count('o') : ", str.count(sub, 0, 6)) # 3
+
