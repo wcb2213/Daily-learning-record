@@ -118,9 +118,19 @@ L[-1::-1]=L[::-1]
 # # 3 three
 
 14 sorted() 排序函数
+sorted(iterable[, cmp[, key[, reverse]]])
+
 # print(sorted(['bob', 'about', 'Zoo', 'Credit'], key=str.lower, reverse=True))
 # # ['Zoo', 'Credit', 'bob', 'about'] 倒序排列 key 不改变原值
 # # 默认情况下，对字符串排序，是按照ASCII的大小比较的，由于'Z' < 'a'，结果，大写字母Z会排在小写字母a的前面。
+
+进阶
+key : 选择元素要比较的形式
+cmp : 两两比较，如果返回为正，则交换两者的位置，即y在前x在后，否则x在前y在后
+默认 cmp = lambda x,y: x-y
+# L=[('b',2),('a',1),('c',3),('d',4)]
+# sorted(L, cmp=lambda x,y:cmp(x[1],y[1]))   # 利用cmp函数
+# sorted(L, key=lambda x:x[1])               # 利用key
 
 15 filter() 筛选函数
 # 和map()类似，filter()也接收一个函数和一个序列。和map()不同的是，filter()把传入的函数依次作用于每个元素，然后根据返回值是True还是False决定保留还是丢弃该元素。
@@ -128,3 +138,18 @@ L[-1::-1]=L[::-1]
 #     return n % 2 == 1
 # list(filter(is_odd, [1, 2, 4, 5, 6, 9, 10, 15]))
 # # 结果: [1, 5, 9, 15]
+
+
+19/3/19
+16 知道数组的val 查找下标
+# L = [1,2,3]
+# for i in range(len(L)):
+#     print(L.index(3-i))
+
+19/3/21
+17 count() 字符串计数
+str.count(sub, start= 0,end=len(string))
+# str="ooo...o"
+# sub='o'
+# print ("str.count('o') : ", str.count(sub, 0, 7)) # 4
+# print ("str.count('o') : ", str.count(sub, 0, 6)) # 3

@@ -1,7 +1,11 @@
 #!/usr/bin/env/ python
 # -*- coding:utf-8 -*-
 # Created by: Vanish
-# Created on: 2019/3/17
+# Created on: 2019/3/21
 
 
-print(int((6/2)+1))
+print(4/2)
+
+
+
+
