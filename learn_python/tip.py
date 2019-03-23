@@ -147,7 +147,7 @@ cmp : 两两比较，如果返回为正，则交换两者的位置，即y在前x
 #     print(L.index(3-i))
 
 19/3/21
-17 count() 字符串计数
+17 count() 字符串计数 也可以用在数组里 如 L.count(k) k int or str 都可以
 str.count(sub, start= 0,end=len(string))
 # str="ooo...o"
 # sub='o'
