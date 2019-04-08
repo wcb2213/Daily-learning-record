@@ -25,5 +25,4 @@ def test(i):
 # main
 for i in range(n-1):
     test(i)
-money += abs(inputL[n-1])
 print(money)

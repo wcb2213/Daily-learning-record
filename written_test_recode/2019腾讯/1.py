@@ -5,18 +5,22 @@
 
 
 # 这个应该100%了
+# input
 s = input().split(' ')
 n = int(s[0])
 k = int(s[1])
 # print(n)
 
+# main
 a = n
 b = 0
 for i in range(k):
     a = (a+1)//2
     if a == 1:
+        # b 为拆分次数
         b = i+1
-        # b = i 忘记加1  最后80%
+# 若b为0，则经过k次拆分，然后一直减一到零
+# 若b不为0，则经过b次拆分，a变为1，再做一次减一即可到零
 if b != 0:
     print(b+1)
 else:
