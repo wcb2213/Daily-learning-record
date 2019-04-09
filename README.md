@@ -1,2 +1,2 @@
-# JianZhiOffer
-实习路上的点滴记录
+# Daily learning record
+记录学习路上的点滴
