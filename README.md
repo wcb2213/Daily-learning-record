@@ -4,11 +4,11 @@ Daily learning record
 
 Files
 ----
-1. algorithm
-    排序算法代码实现
-2. jianzhioffer
-    剑指offer刷题代码（python及c++）
-3. learn_python
-    廖雪峰python教程，tips总结
-4. written_test_recode
-    实习笔试代码
+1. algorithm<br>
+    * 排序算法代码实现
+2. jianzhioffer<br>
+    * 剑指offer刷题代码（python及c++）
+3. learn_python<br>
+    * 廖雪峰python教程，tips总结
+4. written_test_recode<br>
+    * 实习笔试代码
