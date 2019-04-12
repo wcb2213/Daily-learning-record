@@ -15,6 +15,8 @@
 
 # s = 'Hi, %s, you have $%d.' % ('Michael', 1000000)
 # print(s)
+# a = 1
+# print('%0.4f'% a)#1.0000
 
 2 hex(n)
 # 将n转化为16进制表示
