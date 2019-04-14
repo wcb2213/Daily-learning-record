@@ -4,6 +4,7 @@
 # Created on: 2019/4/14
 
 
+#### 示例有问题吧 到底有没有比例系数
 from functools import reduce
 n = int(input())
 l_input = list(map(int, input().split(' ')))

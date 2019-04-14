@@ -15,10 +15,9 @@ for i in range(t):
 
 def f1(n, p):
     if n == 2 or n == 3:
-        return max(p)
+        return p[0]
     else:
-        return p[0]+sum(p[1:-2])+sum(p[2:-1])
+        return p[0]+sum(p[1:-2])+(n-3)*p[-2]
 
 for i in range(t):
-    sorted(p[i], reverse=True)
-    print(f1(n[i], p[i]))
+    print(f1(n[i], sorted(p[i], reverse=True)))
