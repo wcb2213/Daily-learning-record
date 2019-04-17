@@ -4,6 +4,8 @@
 # Created on: 2019/2/23
 
 
+# 665ms
+# 旋转数组的最小数字
 class Solution:
     def minNumberInRotateArray(self, rotateArray):
         # write code here

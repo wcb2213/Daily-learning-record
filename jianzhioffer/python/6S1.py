@@ -4,6 +4,7 @@
 # Created on: 2019/2/23
 
 
+# 656ms
 class Solution:
     def minNumberInRotateArray(self, rotateArray):
         # write code here
@@ -14,7 +15,3 @@ class Solution:
             if rotateArray[i]-rotateArray[i+1] > 0:
                 return rotateArray[i+1]
             i = i+1
-
-# 运行时间：929ms
-#
-# 占用内存：5736k
