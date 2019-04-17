@@ -4,6 +4,8 @@
 # Created on: 2019/2/22
 
 
+# 22ms
+# 用两个栈来实现一个队列 容量为 2n+1 (n为较小的栈的容量)
 class Solution:
     def __init__(self):
         self.stack1=[]
