@@ -4,6 +4,7 @@
 # Created on: 2019/2/24
 
 
+# 36ms
 class Solution:
     def Fibonacci(self, n=39):
         # write code here

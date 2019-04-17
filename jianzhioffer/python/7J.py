@@ -4,17 +4,15 @@
 # Created on: 2019/2/24
 
 
+# 26ms 时间更短
+# 斐波那契数列的第n项
+# 虽然是递归思想，但不推荐递归函数
 class Solution:
     def Fibonacci(self, n):
         # write code here
         L = [0, 1, 1]
-        a = len(L)
-        while n>a-1:
+        a = 3
+        while n > a-1:
             L.append(L[a-2]+L[a-1])
-            a=a+1
+            a += 1
         return L[n]
-
-
-# 运行时间：23ms
-#
-# 占用内存：5728k
