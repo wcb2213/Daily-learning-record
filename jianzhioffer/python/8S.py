@@ -4,6 +4,8 @@
 # Created on: 2019/2/24
 
 
+# 25ms
+# 跳台阶
 class Solution:
     def jumpFloor(self, number):
         # write code here
@@ -12,13 +14,8 @@ class Solution:
             return 1
         elif number == 2:
             return 2
-        while number-2:
+        for i in range(3, number+1):
             a = f1 + f2
             f1 = f2
             f2 = a
-            number = number-1
         return a
-
-# 运行时间：21ms
-#
-# 占用内存：5844k
