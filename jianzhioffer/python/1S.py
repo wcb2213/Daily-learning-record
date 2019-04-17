@@ -4,7 +4,6 @@
 # Created on: 2018/12/13
 
 
-# 二维数组的查找
 # 220ms
 class Solution:
     # array 二维列表
