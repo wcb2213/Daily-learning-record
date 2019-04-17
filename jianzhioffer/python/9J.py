@@ -4,6 +4,8 @@
 # Created on: 2019/2/24
 
 
+# 30ms
+# 变态跳台阶
 class Solution:
     def jumpFloorII(self, number):
         # write code here
@@ -11,7 +13,6 @@ class Solution:
             return 0
         else:
             return pow(2,number-1)
-
 
 # 所以f(n)=f(n-1)+f(n-2)+...+f(1)+1
 # 因为f(n-1)=f(n-2)+f(n-3)+...+f(1)+1
