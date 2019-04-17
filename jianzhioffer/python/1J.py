@@ -4,8 +4,8 @@
 # Created on: 2019/4/17
 
 
-# 二维数组的查找
 # 76ms 为什么这个时间更快
+# 二维数组的查找
 class Solution:
     # array 二维列表
     def Find(self, target, array):

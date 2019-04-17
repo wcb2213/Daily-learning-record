@@ -155,3 +155,8 @@ str.count(sub, start= 0,end=len(string))
 # sub='o'
 # print ("str.count('o') : ", str.count(sub, 0, 7)) # 4
 # print ("str.count('o') : ", str.count(sub, 0, 6)) # 3
+
+19/4/17
+18 break continue
+# break 打破了最小封闭for或while循环
+# continue 跳过当前循环的剩余语句，然后继续进行下一轮循环
