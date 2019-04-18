@@ -3,6 +3,8 @@
 # Created by Vanish at 2019/2/24
 
 
+# 28ms
+# 求base的exponent次方  代码的完整性
 class Solution:
     def Power(self, base, exponent):
         result = 1
@@ -12,8 +14,8 @@ class Solution:
             return 1
         if exponent < 0:
             for i in range(-exponent):
-                result = result * base
+                result *= base
             return 1/result
         for i in range(exponent):
-            result = result * base
+            result *= base
         return result
