@@ -131,17 +131,6 @@
 # （6）长度、最大最小值
 # 通过内建函数len、max和min可以返回序列中所包含元素的数量、最大和最小元素。
 
-# array = [[1,2,8,9],[2,4,9,12],[4,7,10,13],[6,8,11,15], [], [1]]
-#
-# n = len(array)
-# for i in range(n):
-#     print(array[i])
-
-# ss = 'aing'
-# l = list(ss)
-# for i in range(len(l)):
-#     print(l[i])
-
 # s = list(map(int, input().split(' ')))
 # print(s)
 # s = 'abc'
@@ -155,15 +144,6 @@
 # matrix = [[0 for i in range(3)] for i in range(4)]
 # print(matrix)
 
-# s1 = input()
-# s2 = s1.replace(' ','')
-# print(s2)
-
-# s1 = input().split(' ')
-# print(s1[0]+s1[1]+s1[2])
-
-n = int(input())
-l = []
-for i in range(n):
-    l.append(int(input()))
-print(n, l)
+l = [1,2,3,9,8,7]
+l.reverse()
+print(l)
