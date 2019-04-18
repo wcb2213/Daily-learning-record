@@ -4,6 +4,8 @@
 # Created on: 2019/3/15
 
 
+# 源二叉树的镜像 （递归，每一步都是将当前节点的左右子树对换）
+# 23ms
 class Solution:
     # 返回镜像树的根节点
     def Mirror(self, root):
