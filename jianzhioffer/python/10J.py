@@ -16,8 +16,9 @@ class Solution:
         if n == 2:
             return 2
         a, b = 1, 2
-        for i in range(3,n+1):
-            c = a+b
-            a = b
-            b = c
+        for i in range(3, n+1):
+            a, b = b, a+b
+            # c = a+b
+            # a = b
+            # b = c
         return b
