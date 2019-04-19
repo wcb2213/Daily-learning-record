@@ -4,6 +4,8 @@
 # Created on: 2019/3/17
 
 
+# 33ms
+# 栈的压入和弹出
 class Solution:
     def IsPopOrder(self, pushV, popV):
         # write code here
@@ -12,13 +14,9 @@ class Solution:
         stack = []
         while pushV:
             stack.append(pushV.pop(0))
-        # for i in pushV:
-        #     stack.append(i)
-
             while stack and stack[-1] == popV[0]:
                 stack.pop()
                 popV.pop(0)
         if stack:
-        # if len(stack):
             return False
         return True

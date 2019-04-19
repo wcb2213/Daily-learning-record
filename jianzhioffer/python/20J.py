@@ -4,6 +4,7 @@
 # Created on: 2019/3/16
 
 
+# 25ms
 class Solution:
     def __init__(self):
         self.arr=[]

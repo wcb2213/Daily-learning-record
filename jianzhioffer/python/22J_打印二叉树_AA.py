@@ -3,7 +3,8 @@
 # Created by: Vanish
 # Created on: 2019/3/16
 
-
+# 24ms
+# 从上往下打印出二叉树的每个节点，同层节点从左至右打印。
 # class TreeNode:
 #     def __init__(self, x):
 #         self.val = x
@@ -16,11 +17,11 @@ class Solution:
         if not root:
             return []
         res = []
-        currentStack = [root] ## 只有一个元素，root
+        currentStack = [root]
         while currentStack:
             nextStack = []
             for i in currentStack:
-                if i.left != None:  ##  if i.left:
+                if i.left != None:
                     nextStack.append(i.left)
                 if i.right != None:
                     nextStack.append(i.right)
