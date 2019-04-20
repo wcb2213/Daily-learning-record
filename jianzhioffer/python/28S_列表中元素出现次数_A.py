@@ -3,17 +3,19 @@
 # Created by: Vanish
 # Created on: 2019/3/21
 
-
+# 42ms
+# 数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。
+# python 中好像有内置函数 下次看一下
 class Solution:
     def MoreThanHalfNum_Solution(self, numbers):
         # write code here
         k = self.weightList(numbers)
         n = len(numbers)
-        for i in range(n):
-            if k[i] > n/2:
-                return numbers[i]
+        if max(k) > n/2:
+            index = k.index(max(k))
+            return numbers[index]
         return 0
-
+    # 输出res 与 L 同大小 元素为 原L中元素的个数
     def weightList(self, L):
         res = []
         n = len(L)

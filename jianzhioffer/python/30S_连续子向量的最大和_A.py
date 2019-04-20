@@ -4,11 +4,14 @@
 # Created on: 2019/3/21
 
 
+# 24ms
+# 连续子向量的最大和
+# 暴力遍历  有没有更好的方法
 class Solution:
     def FindGreatestSumOfSubArray(self, array):
         # write code here
         n = len(array)
-        if n<1:
+        if n < 1:
             return []
         res = []
         for i in range(n):
