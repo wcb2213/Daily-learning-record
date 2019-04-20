@@ -4,16 +4,15 @@
 # Created on: 2019/3/21
 
 
+# 23ms
+# 输入n个整数，找出其中最小的K个数。
 class Solution:
     def GetLeastNumbers_Solution(self, tinput, k):
         # write code here
-        res = []
         if k > len(tinput):
             return []
-        for i in range(k):
-            res.append(min(tinput))
-            tinput.pop(tinput.index(min(tinput)))
-        return res
+        tinput = sorted(tinput)
+        return tinput[0:k]
 
 if __name__ == '__main__':
     a = Solution()
