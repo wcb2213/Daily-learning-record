@@ -17,14 +17,27 @@
 # print(f(5))
 
 # ②自底向上的动态规划
-def f2(n):
+# def f2(n):
+#     # write code here
+#     f1, f2 = 1, 2
+#     if n<=2:
+#         return n
+#     for i in range(3, n + 1):
+#         a = f1 + f2
+#         f1 = f2
+#         f2 = a
+#     return a
+# print(f2(5))
+
+# 推荐
+def f3(n):
     # write code here
+    if n< = 2:
+        return list(range(1, n+1))
     f1, f2 = 1, 2
-    if n<=2:
-        return n
+    l = [1,2]
     for i in range(3, n + 1):
-        a = f1 + f2
-        f1 = f2
-        f2 = a
-    return a
-print(f2(5))
+        f1, f2 = f2, f1+f2
+        l.append(f2)
+    return l
+print(f3(5)[-1])
