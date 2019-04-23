@@ -4,8 +4,7 @@
 # Created on: 2019/4/20
 
 
-# ①自顶向下的备忘录法
-# dp=[0]*5
+# ①自顶向下的备忘录法 还是用了递归
 # def f(n):
 #     if n<=2:
 #         return n
@@ -14,9 +13,12 @@
 #     if dp[n-2] == 0:
 #         dp[n-2] = f(n-2)
 #     return dp[n-1]+dp[n-2]
+# dp=[0]*5
 # print(f(5))
+# print(dp)
 
-# ②自底向上的动态规划
+# # ②自底向上的动态规划  没用递归 比上面好点
+#### 能用这个最好
 # def f2(n):
 #     # write code here
 #     f1, f2 = 1, 2
@@ -29,15 +31,16 @@
 #     return a
 # print(f2(5))
 
-# 推荐
-def f3(n):
-    # write code here
-    if n< = 2:
-        return list(range(1, n+1))
-    f1, f2 = 1, 2
-    l = [1,2]
-    for i in range(3, n + 1):
-        f1, f2 = f2, f1+f2
-        l.append(f2)
-    return l
-print(f3(5)[-1])
+# # 用数组存储起来
+# def f3(n):
+#     # write code here
+#     if n <= 2:
+#         return list(range(1, n+1))
+#     f1, f2 = 1, 2
+#     l = [1,2]
+#     for i in range(3, n + 1):
+#         f1, f2 = f2, f1+f2
+#         l.append(f2)
+#     return l
+# print(f3(5))
+# print(f3(5)[-1])
