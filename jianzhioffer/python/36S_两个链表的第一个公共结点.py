@@ -4,6 +4,9 @@
 # Created on: 2019/3/22
 
 
+# 24ms
+# 输入两个链表，找出它们的第一个公共结点。
+# 公共节点具有相同的地址
 # class ListNode:
 #     def __init__(self, x):
 #         self.val = x
@@ -17,10 +20,10 @@ class Solution:
         if not p1 or not p2:
             return
         while p1:
-            list1.append(p1.val)
+            list1.append(p1)
             p1 = p1.next
         while p2:
-            if p2.val in list1:
+            if p2 in list1:
                 return p2
             else:
                 p2 = p2.next

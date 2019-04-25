@@ -4,6 +4,8 @@
 # Created on: 2019/3/26
 
 
+# 30ms
+# 扑克牌顺子
 class Solution:
     def IsContinuous(self, numbers):
         # write code here

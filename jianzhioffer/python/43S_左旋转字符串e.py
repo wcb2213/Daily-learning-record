@@ -4,17 +4,15 @@
 # Created on: 2019/3/26
 
 
+# 29ms
+# 左旋转字符串
 class Solution:
     def LeftRotateString(self, s, n):
         # write code here
         if not s or n < 0:
             return ''
-        l = list(s)
-        n = n%(len(l))
-        for i in range(n):
-            a = l.pop(0)
-            l.append(a)
-        return ''.join(l)
+        n = n % len(s)
+        return s[n:] + s[:n]
 
 if __name__ == '__main__':
     a = Solution()

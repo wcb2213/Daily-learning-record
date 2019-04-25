@@ -128,7 +128,7 @@ sorted(iterable[, cmp[, key[, reverse]]])
 
 进阶
 key : 选择元素要比较的形式
-cmp : 两两比较，如果返回为正，则交换两者的位置，即y在前x在后，否则x在前y在后
+cmp : 两两比较，如果返回为正，则交换两者的位置，即y在前x在后，否则x在前y在后  ex：jianzhioffer 32
 默认 cmp = lambda x,y: x-y
 # L=[('b',2),('a',1),('c',3),('d',4)]
 # sorted(L, cmp=lambda x,y:cmp(x[1],y[1]))   # 利用cmp函数

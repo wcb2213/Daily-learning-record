@@ -4,6 +4,8 @@
 # Created on: 2019/3/25
 
 
+# 41ms
+# 和为S的连续正数数列
 class Solution:
     def FindContinuousSequence(self, tsum):
         # write code here

@@ -4,16 +4,15 @@
 # Created on: 2019/3/26
 
 
+# 26ms
+# 翻转单词顺序列
 class Solution:
     def ReverseSentence(self, s):
-        # write code here
         if not s:
             return ''
         l = list(s.split(' '))
-        res = []
-        for i in range(len(l)):
-            res.append(l.pop())
-        return ' '.join(res)
+        l.reverse()
+        return ' '.join(map(str,l))
 
 
 if __name__ == '__main__':

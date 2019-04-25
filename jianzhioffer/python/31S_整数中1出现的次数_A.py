@@ -4,6 +4,8 @@
 # Created on: 2019/3/21
 
 
+# 30ms
+# 整数中1出现的个数
 class Solution:
     def NumberOf1Between1AndN_Solution(self, n):
         # write code here

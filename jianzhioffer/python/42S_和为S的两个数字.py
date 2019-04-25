@@ -4,6 +4,8 @@
 # Created on: 2019/3/25
 
 
+# 34ms
+# 和为S的两个数字
 class Solution:
     def FindNumbersWithSum(self, array, tsum):
         # write code here

@@ -4,6 +4,7 @@
 # Created on: 2019/3/22
 
 
+# 第一个只出现一次的字符
 class Solution:
     def FirstNotRepeatingChar(self, s):
         # write code here

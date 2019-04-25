@@ -17,8 +17,12 @@ for i in range(len(l_input)):
     if l_input[i] == 0:
         l_input.pop(i)
 
+# 如果有重复数字，必不能得到顺子
 # 如果l_input中最大值减去最小值的结果小于等于4 那么必能得到顺子
 def f2(l):
+    for i in range(len(l_input)):
+        if l_input[i] == l_input[i + 1]:
+            return False
     if max(l)-min(l) <= 4:
         return True
     else:
