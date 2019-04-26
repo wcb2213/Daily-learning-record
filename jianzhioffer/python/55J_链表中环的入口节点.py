@@ -4,6 +4,9 @@
 # Created on: 2019/4/2
 
 
+# 27ms
+# 链表中环的入口节点
+# 给一个链表，若其中包含环，请找出该链表的环的入口结点，否则，输出null。
 # class ListNode:
 #     def __init__(self, x):
 #         self.val = x
@@ -11,12 +14,10 @@
 class Solution:
     def EntryNodeOfLoop(self, pHead):
         # write code here
-        l1, l2 = [], []
+        dict = []
         p = pHead
         while p:
-            l1.append(p)
-            if p.val in l2:
-                return l1[l2.index(p.val)]
-            l2.append(p.val)
+            if p in dict:
+                return p
+            dict.append(p)
             p = p.next
-        return None

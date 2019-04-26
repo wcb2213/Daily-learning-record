@@ -3,7 +3,7 @@
 # Created by: Vanish
 # Created on: 2019/3/31
 
-
+# 30ms
 class Solution:
     # 返回对应char
     def __init__(self):

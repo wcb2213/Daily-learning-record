@@ -4,22 +4,18 @@
 # Created on: 2019/3/31
 
 
+# 23ms
+# 字符串中第一个重复的字符
 class Solution:
-    strl = ''
-
     # 返回对应char
+    def __init__(self):
+        self.s = ''
     def FirstAppearingOnce(self):
         # write code here
-        count = [0] * 256
-        for s in self.strl:
-            count[ord(s)] += 1
-
-        for s in self.strl:
-            if count[ord(s)] == 1:
-                return s
-
+        for i in self.s:
+            if self.s.count(i) == 1:
+                return i
         return '#'
-
     def Insert(self, char):
         # write code here
-        self.strl = self.strl + char
+        self.s += char
