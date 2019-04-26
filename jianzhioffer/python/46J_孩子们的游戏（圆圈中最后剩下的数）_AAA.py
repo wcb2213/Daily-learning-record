@@ -4,6 +4,8 @@
 # Created on: 2019/3/27
 
 
+# 29ms
+# 孩子们的游戏（圆圈中最后剩下的数）
 class Solution:
     def LastRemaining_Solution(self, n, m):
         # write code here

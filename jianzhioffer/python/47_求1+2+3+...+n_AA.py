@@ -4,6 +4,8 @@
 # Created on: 2019/3/28
 
 
+# 32ms
+# 求1+2+3+...+n，要求不能使用乘除法、for、while、if、else、switch、case等关键字及条件判断语句（A?B:C）。
 # 加一个与算法判断 递归终止， 及 类的属性设置
 class Solution:
     def __init__(self):

@@ -4,6 +4,8 @@
 # Created on: 2019/3/28
 
 
+# 25ms
+# 把字符串转换成正数
 from functools import reduce
 class Solution:
     def __init__(self):
