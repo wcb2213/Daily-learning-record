@@ -4,7 +4,7 @@
 # Created on: 2019/4/26
 
 
-24ms
+# 24ms
 class Solution:
     def multiply(self, A):
         # write code here
