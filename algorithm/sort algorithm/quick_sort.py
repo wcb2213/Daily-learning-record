@@ -20,7 +20,5 @@ def quick_sort(data):
         return data
 
 if __name__ == '__main__':
-    # 示例：
     array = [2, 3, 5, 7, 1, 4, 6, 15, 5, 2, 7, 9, 10, 15, 9, 17, 12]
     print(quick_sort(array))
-    # 输出为[1, 2, 2, 3, 4, 5, 5, 6, 7, 7, 9, 9, 10, 12, 15, 15, 17]
