@@ -4,7 +4,7 @@
 # Created on: 2019/4/3
 
 
-
+# 29ms
 # 大家的实现很多都是将每层的数据存进ArrayList中，偶数层时进行reverse操作，
 # 在海量数据时，这样效率太低了。
 # （我有一次面试，算法考的就是之字形打印二叉树，用了reverse，
@@ -40,7 +40,6 @@ class Solution:
 
             if level % 2 == 0:
                 rs.reverse()
-            # res += rs  #报错？ 2.7/3.5？
             res.append(rs)
 
             stack = ns
