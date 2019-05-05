@@ -4,8 +4,8 @@
 # Created on: 2019/3/21
 
 
+"""快速排序"""
 def quick_sort(data):
-    """快速排序"""
     if len(data) >= 2:  # 递归入口及出口
         mid = data[len(data) // 2]  # 选取基准值，也可以选取第一个或最后一个元素
         left, right = [], []  # 定义基准值左右两侧的列表
