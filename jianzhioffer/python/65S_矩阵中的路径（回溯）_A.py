@@ -4,6 +4,9 @@
 # Created on: 2019/4/5
 
 
+# 27ms
+# 机器人的运动范围
+####  不计数的回溯法
 class Solution:
     # 输入的matrix是一个字符串
     def hasPath(self, matrix, rows, cols, path):
@@ -18,12 +21,6 @@ class Solution:
                         return True
         return False
 
-    # s = 'abc'
-    # print(s[3:] == '')
-    # True
-    # l = [1, 2, 3]
-    # print(l[3:] == [])
-    # True
     def search(self, matrix, path, dict, i, j):
         if path == "":
             self.b = True

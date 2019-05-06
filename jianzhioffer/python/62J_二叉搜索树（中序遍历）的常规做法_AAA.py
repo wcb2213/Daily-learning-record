@@ -4,6 +4,8 @@
 # Created on: 2019/4/4
 
 
+# 25ms
+# 二叉搜索树（中序遍历）的常规做法
 # class TreeNode:
 #     def __init__(self, x):
 #         self.val = x
@@ -25,6 +27,7 @@ class Solution:
     def midRecur(self, p):
         if not p:
             return None
+        # 只处理根节点 左右子树递归
         self.midRecur(p.left)
         self.res.append(p)
         self.midRecur(p.right)

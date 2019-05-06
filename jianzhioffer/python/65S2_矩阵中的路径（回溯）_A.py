@@ -4,10 +4,10 @@
 # Created on: 2019/4/5
 
 
+# 25ms
 class Solution:
     def hasPath(self, matrix, rows, cols, path):
         # write code here
-
         for i in range(rows):
             for j in range(cols):
                 if matrix[i * cols + j] == path[0]:

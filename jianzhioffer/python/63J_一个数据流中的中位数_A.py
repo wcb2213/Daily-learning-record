@@ -4,6 +4,8 @@
 # Created on: 2019/4/4
 
 
+# 36ms
+# 一个数据流中的中位数
 class Solution:
     def __init__(self):
         self.data = []
