@@ -108,6 +108,14 @@ L[-1::-1]=L[::-1]
 # print(l[-1::-1])
 # print(l[::-1])
 
+切片超出范围
+# s = 'abc'
+# print(s[3:] == '')
+# True
+# l = [1, 2, 3]
+# print(l[3:] == [])
+# True
+
 # 19/3/12
 13 输出迭代数列的下标和元素
 # enumerate(sequence, [start=0])
