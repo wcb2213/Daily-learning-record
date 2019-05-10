@@ -4,11 +4,15 @@ Daily learning record
 
 Files
 ----
-1. algorithm<br>
+1. LeetCode<br>
+    * 简单和中等难度
+2. algorithm<br>
     * 排序算法代码实现
-2. jianzhioffer<br>
-    * 剑指offer刷题代码（python及c++）
-3. learn_python<br>
-    * 廖雪峰python教程，tricks总结
-4. written_test_recode<br>
-    * 实习笔试代码
+    * 动态回归
+3. jianzhioffer（66题）<br>
+    * python
+    * c++
+4. learn_python<br>
+    * 廖雪峰python教程总结及tricks
+5. written_test_recode<br>
+    * 实习笔试代码备份
