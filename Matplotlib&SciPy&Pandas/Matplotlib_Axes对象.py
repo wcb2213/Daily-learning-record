@@ -20,7 +20,7 @@ plt.plot(t1, f(t1), 'bo',
          t2, f(t2), 'k')
 plt.subplot(212)
 plt.plot(t2, np.cos(2*np.pi*t2), 'r--')
-plt.show()
+# plt.show()
 
 #### 二 基于对象
 fig, axes = plt.subplots(2, 1)
