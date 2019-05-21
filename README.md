@@ -13,7 +13,6 @@ Files
     * 动态回归
 4. jianzhioffer（66题）<br>
     * python
-    * c++
 5. learn_python<br>
     * 廖雪峰python教程总结及tricks
 6. written_test_recode<br>
