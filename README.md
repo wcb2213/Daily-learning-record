@@ -8,6 +8,7 @@ Files
     * 简单和中等难度
 2. Matplotlib&SciPy&Pandas<br>
     * Matplotlib
+    * SciPy
 3. algorithm<br>
     * 排序算法代码实现
     * 动态回归
