@@ -15,6 +15,6 @@ Files
 4. jianzhioffer（66题）<br>
     * python
 5. learn_python<br>
-    * 廖雪峰python教程总结及tricks
+    * 各种python教程总结及tricks
 6. written_test_recode<br>
     * 实习笔试代码备份
