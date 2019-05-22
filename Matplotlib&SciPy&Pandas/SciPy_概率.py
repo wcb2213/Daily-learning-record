@@ -15,5 +15,7 @@ p2 = norm.cdf(x)#累积分布函数
 plt.plot(x, p,
          x, p2)
 plt.show()
-x_norm = norm.rvs(size=1000)
-print(x_norm)
+x_norm = norm.rvs(size=1000)#得到1000符合标准正态分布的点 size 默认为1
+# print(x_norm)
+
+# 学生t分布
