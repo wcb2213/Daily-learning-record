@@ -11,7 +11,7 @@ from scipy import linalg
 # import pysnooper
 #
 # @pysnooper.snoop()
-def pca(X,k):# 输入X为 n个d维数据
+def pca(X,k):# 输入X为 n个d维数据(N,d)
     m, s = X.mean(axis=0), X.std(axis=0)
     # print(m,s)
     # X_bar = (X-m) / s
