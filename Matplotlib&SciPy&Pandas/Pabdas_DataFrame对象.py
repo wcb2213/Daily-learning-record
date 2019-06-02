@@ -47,7 +47,3 @@ df.insert(1,'bar2',s1)
 df.loc['b']
 df.iloc[1]
 # 2.3 加法和减法操作
-
-## 数据读写
-df.to_csv('foo.sql')
-pd.read_csv('foo.csv')
