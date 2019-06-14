@@ -5,8 +5,8 @@
 
 
 """快速排序"""
-# 最差时间分析	平均时间复杂度	稳定度	空间复杂度
-# O(n2)	O(n*log2n)	不稳定	O(log2n)~O(n)
+# 时间复杂度（平均）	时间复杂度（最坏)	时间复杂度（最好)	空间复杂度	        稳定性	复杂性
+# O(nlog2n)O(nlog2n)	O(n2)O(n2)	        O(nlog2n)O(nlog2n)	O(nlog2n)O(nlog2n)	不稳定	较复杂
 def quick_sort(arr):
     if len(arr) < 2:
         return arr
