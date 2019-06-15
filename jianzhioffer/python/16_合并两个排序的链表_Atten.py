@@ -5,7 +5,7 @@
 
 
 # 47ms
-# 合成链表
+# 合并两个排序的链表
 # class ListNode:
 #     def __init__(self, x):
 #         self.val = x

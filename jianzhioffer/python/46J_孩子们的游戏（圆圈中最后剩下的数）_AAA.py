@@ -6,6 +6,7 @@
 
 # 29ms
 # 孩子们的游戏（圆圈中最后剩下的数）
+# 环形链表？？
 class Solution:
     def LastRemaining_Solution(self, n, m):
         # write code here
@@ -17,9 +18,8 @@ class Solution:
             i = (m+i-1) % len(res) # 直接取余数 可保证 i 非负
             res.pop(i)
             # 下面这个不行，因为 i=i-1 可能为负数
-            # i = (m + i) % len(res)
-            # res.pop(i-1)
-            # i = i - 1
+            # i = (m + i) % len(res) - 1
+            # res.pop(i)
         return res[0]
 
 

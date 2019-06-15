@@ -13,7 +13,8 @@ class Solution:
         L = []
         head = listNode
         while head:
-            L.insert(0, head.val)
+            # 压入栈中，python中是否有现成的栈的实现？
+            L.insert(0, head.val) # append然后再reverse 哪个复杂度低？
             head = head.next
         return L
 

@@ -17,7 +17,7 @@ class Solution:
         if not pHead:
             return
         l_newlink = [] # 存储新链表每个节点的地址
-        l_random = [] # 存储新链表每个节点的随机节点地址
+        l_random = [] # 存储新链表每个节点的随机节点的地址
 
         p = pHead  # 改变p的属性 pHead 也会变
         q = RandomListNode(p.label)
