@@ -27,10 +27,6 @@ class Solution:
 
     # 得到二叉树的中序遍历的list
     def get_midOrderList(self, t):
-        res = []
-        if t.left:
-            res += self.get_midOrderList(t.left)
-        res.append(t)
-        if t.right:
-            res += self.get_midOrderList(t.right)
-        return res
+        if t == None:
+            return []
+        return self.get_midOrderList(t.left) + [t] + self.get_midOrderList(t.right)

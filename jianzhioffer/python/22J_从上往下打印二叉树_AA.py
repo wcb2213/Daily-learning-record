@@ -10,21 +10,23 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
+# 宽度优先遍历，不用递归用循环
 class Solution:
     # 返回从上到下每个节点值列表，例：[1,2,3]
     def PrintFromTopToBottom(self, root):
         # write code here
         if not root:
             return []
-        res = []
-        currentStack = [root]
-        while currentStack:
-            nextStack = []
-            for i in currentStack:
-                if i.left != None:
-                    nextStack.append(i.left)
-                if i.right != None:
-                    nextStack.append(i.right)
-                res.append(i.val)
-            currentStack = nextStack
+        res = [root.val]
+        list_current = [root]
+        while list_current:
+            list_tmp = []
+            for i in list_current:
+                if i.left:
+                    list_tmp.append(i.left)
+                    res.append(i.left.val)
+                if i.right:
+                    list_tmp.append(i.right)
+                    res.append(i.right.val)
+            list_current = list_tmp
         return res

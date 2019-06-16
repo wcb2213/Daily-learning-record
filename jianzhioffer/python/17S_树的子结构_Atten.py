@@ -33,5 +33,5 @@ class Solution:
             return False
         if pRoot1.val != pRoot2.val:
             return False
-        return Solution.Subtree(self, pRoot1.left, pRoot2.left) and \
-               Solution.Subtree(self, pRoot1.right, pRoot2.right)
+        return self.Subtree(pRoot1.left, pRoot2.left) and \
+               self.Subtree(pRoot1.right, pRoot2.right)
