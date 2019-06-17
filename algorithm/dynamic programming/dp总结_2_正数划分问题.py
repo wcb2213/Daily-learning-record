@@ -16,7 +16,7 @@
 #     elif n==m:
 #         return dfs(n,m-1)+1
 #     else:
-#         return dfs(n,m-1)+dfs(n-m,m)
+#         return dfs(n,m-1)+dfs(n-m,m) # 没有m及至少有一个m
 # n=m = 5
 # print(dfs(n,m))
 

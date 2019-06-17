@@ -17,30 +17,15 @@
 # print(f(5))
 # print(dp)
 
-# # ②自底向上的动态规划  没用递归 比上面好点
-#### 能用这个最好
-# def f2(n):
-#     # write code here
-#     f1, f2 = 1, 2
-#     if n<=2:
-#         return n
-#     for i in range(3, n + 1):
-#         a = f1 + f2
-#         f1 = f2
-#         f2 = a
-#     return a
-# print(f2(5))
-
-# # 用数组存储起来
-# def f3(n):
-#     # write code here
-#     if n <= 2:
-#         return list(range(1, n+1))
-#     f1, f2 = 1, 2
-#     l = [1,2]
-#     for i in range(3, n + 1):
-#         f1, f2 = f2, f1+f2
-#         l.append(f2)
-#     return l
-# print(f3(5))
-# print(f3(5)[-1])
+# ②自底向上的动态规划  没用递归 比上面好点
+### 能用这个最好
+def f2(n):
+    # write code here
+    f1, f2 = 1, 2
+    if n<=2:
+        return n
+    for i in range(3, n + 1):
+        a = f1 + f2
+        f1, f2 = f2, a
+    return a
+print(list(map(f2, list(range(1,5))))) ## 也可保存在一个链表中
