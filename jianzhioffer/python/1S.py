@@ -4,13 +4,20 @@
 # Created on: 2018/12/13
 
 
-# 220ms
+# 311ms
+# 二维数组的查找
+# 书T4
 class Solution:
     # array 二维列表
     def Find(self, target, array):
         # write code here
-        n = len(array)
-        for i in range(n):
-            if target in array[i]:
+        n = 0
+        m = len(array[0]) - 1
+        while n<len(array) and 0<=m:
+            if array[n][m] == target:
                 return True
+            if array[n][m] > target:
+                m -= 1
+            elif array[n][m] < target:
+                n += 1
         return False
