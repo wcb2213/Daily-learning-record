@@ -20,7 +20,7 @@ def select_sort(arr):
     newArr = []
     for i in range(len(arr)):
         smallest_index = findSamllest(arr)
-        newArr.append(arr.pop(smallest_index))
+        newArr.append(arr.pop)
     return newArr
 
 

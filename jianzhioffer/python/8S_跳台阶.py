@@ -9,13 +9,10 @@
 class Solution:
     def jumpFloor(self, number):
         # write code here
-        f1, f2 = 1 ,2
-        if number == 1:
-            return 1
-        elif number == 2:
-            return 2
-        for i in range(3, number+1):
-            a = f1 + f2
-            f1 = f2
-            f2 = a
-        return a
+        n = number
+        l=[0,1,2,3]
+        index = 3
+        while n>index:
+            l.append(l[index]+l[index-1])
+            index += 1
+        return l[n]

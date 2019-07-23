@@ -13,10 +13,10 @@ class Solution:
             return False
         stack = []
         while pushV:
-            stack.append(pushV.pop(0))
+            stack.append(pushV.pop)
             while stack and stack[-1] == popV[0]:
                 stack.pop()
-                popV.pop(0)
+                popV.pop
         if stack:
             return False
         return True

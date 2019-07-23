@@ -25,21 +25,21 @@ class Solution:
     def reConstructBinaryTree(self, pre, tin):
         if not pre or not tin:
             return None
-        flag = TreeNode(pre.pop(0))  #### 创建二叉树类
-        index = tin.index(flag.val)
-        flag.left = self.reConstructBinaryTree(pre, tin[:index])
-        flag.right = self.reConstructBinaryTree(pre, tin[index+1:])
-        return flag
+        pRoot = TreeNode(pre.pop)
+        index = tin.index(pRoot.val)
+        pRoot.left = self.reConstructBinaryTree(pre, tin[:index])
+        pRoot.right = self.reConstructBinaryTree(pre, tin[index+1:])
+        return pRoot
 
     # 已知后序遍历与中序遍历
     def reConstructBinaryTree_post(self, post, tin):
         if not post or not tin:
             return None
-        flag = TreeNode(post.pop())  #### 创建二叉树类
-        index = tin.index(flag.val)
-        flag.right = self.reConstructBinaryTree_post(post, tin[index+1:])
-        flag.left = self.reConstructBinaryTree_post(post, tin[:index])
-        return flag
+        pRoot = TreeNode(post.pop)  #### 创建二叉树类
+        index = tin.index(pRoot.val)
+        pRoot.right = self.reConstructBinaryTree_post(post, tin[index+1:])
+        pRoot.left = self.reConstructBinaryTree_post(post, tin[:index])
+        return pRoot
 
 if __name__ == '__main__':
     pre = [1,2,4,7,3,5,6,8]
@@ -54,4 +54,4 @@ if __name__ == '__main__':
         # return tree_storeInList(p.left) + tree_storeInList(p.right) + [p.val] # 按照后序生成列表
     a = Solution()
     print(tree_storeInList(a.reConstructBinaryTree(pre, tin)))
-    print(tree_storeInList(a.reConstructBinaryTree_post(post, tin)))
+    # print(tree_storeInList(a.reConstructBinaryTree_post(post, tin)))

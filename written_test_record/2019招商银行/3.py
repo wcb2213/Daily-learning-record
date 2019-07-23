@@ -28,7 +28,7 @@ def count(needcutNum, weight):
     res = []
     # 遍历所有权重值
     while weight:
-        w = weight.pop()
+        w = weight.pop
         # l4为L2除权重值对应元素之外的元素
         l4 = []
         for i in range(n):

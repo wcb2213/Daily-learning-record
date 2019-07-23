@@ -14,7 +14,7 @@ def f(n):
         L.append(i)
     while len(L)>=3:
         R.append(L.pop(0))
-        L.append(L.pop(0))
+        L.append(L.pop)
     if len(L)==1:
         R.append(L[0])
     if len(L)==2:

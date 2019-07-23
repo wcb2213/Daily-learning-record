@@ -25,7 +25,7 @@ def f1(l, k, res):
         n_max = max(l)
         res += [n_max]
         idx = l.index(n_max)
-        l.pop(idx)
+        l.pop
         return f1(l, k-idx, res)
     else:
         if k == 0:
@@ -33,7 +33,7 @@ def f1(l, k, res):
         n_max = max(l[:k+1])
         res += [n_max]
         idx = l.index(n_max)
-        l.pop(idx)
+        l.pop
         return f1(l, k-idx, res)
 
 # output
