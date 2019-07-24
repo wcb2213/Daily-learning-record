@@ -11,7 +11,7 @@ def quick_sort(arr):
     if len(arr) < 2:
         return arr
     else:
-        pivot = arr.pop  # 选取基准值，也可以选取第一个或最后一个元素,并从原始数组中移除基准值
+        pivot = arr.pop()  # 选取基准值，也可以选取第一个或最后一个元素,并从原始数组中移除基准值
         left, right = [], []
         for i in range(len(arr)):
             if arr[i] <= pivot:

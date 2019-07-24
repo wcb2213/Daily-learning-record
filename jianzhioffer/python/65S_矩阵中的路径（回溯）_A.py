@@ -4,32 +4,34 @@
 # Created on: 2019/4/5
 
 
-# 27ms
-# 机器人的运动范围
+# 30ms
+# 矩阵中的路径
 ####  不计数的回溯法
 class Solution:
-    # 输入的matrix是一个字符串
+    def __init__(self):
+        self.isTrue = False
     def hasPath(self, matrix, rows, cols, path):
-        self.cols, self.rows = cols, rows
-        matrix = [matrix[r * cols:(r + 1) * cols] for r in range(0, rows)]
+        # write code here
+        self.matrix = [matrix[r*cols:(r+1)*cols] for r in range(rows)]
+        self.rows = rows
+        self.cols = cols
         for i in range(rows):
             for j in range(cols):
-                if matrix[i][j] == path[0]:
-                    self.b = False
-                    self.search(matrix, path[1:], [(i, j)], i, j)
-                    if self.b:
+                if self.matrix[i][j] == path[0]:
+                    self.search(path[1:], [(i, j)], i, j)
+                    if self.isTrue:
                         return True
         return False
-
-    def search(self, matrix, path, dict, i, j):
-        if path == "":
-            self.b = True
+    def search(self, path, dict, i, j):
+        if path == '':
+            self.isTrue = True
             return
-        if j != 0 and (i, j - 1) not in dict and matrix[i][j - 1] == path[0]:
-            self.search(matrix, path[1:], dict + [(i, j - 1)], i, j - 1)
-        if i != 0 and (i - 1, j) not in dict and matrix[i - 1][j] == path[0]:
-            self.search(matrix, path[1:], dict + [(i - 1, j)], i - 1, j)
-        if j != self.cols - 1 and (i, j + 1) not in dict and matrix[i][j + 1] == path[0]:
-            self.search(matrix, path[1:], dict + [(i, j + 1)], i, j + 1)
-        if i != self.rows - 1 and (i + 1, j) not in dict and matrix[i + 1][j] == path[0]:
-            self.search(matrix, path[1:], dict + [(i + 1, j)], i + 1, j)
+        if i != 0 and (i - 1, j) not in dict and self.matrix[i - 1][j] == path[0]:
+            self.search(path[1:], dict + [(i - 1, j)], i - 1, j)
+        if i != self.rows - 1 and (i + 1, j) not in dict and self.matrix[i + 1][j] == path[0]:
+            self.search(path[1:], dict + [(i + 1, j)], i + 1, j)
+        if j != 0 and (i, j - 1) not in dict and self.matrix[i][j - 1] == path[0]:
+            self.search(path[1:], dict + [(i, j - 1)], i, j - 1)
+        if j != self.cols - 1 and (i, j + 1) not in dict and self.matrix[i][j + 1] == path[0]:
+            self.search(path[1:], dict + [(i, j + 1)], i, j + 1)
+        return
