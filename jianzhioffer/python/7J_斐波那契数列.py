@@ -11,8 +11,6 @@ class Solution:
     def Fibonacci(self, n):
         # write code here
         L = [0, 1, 1]
-        a = 3
-        while n > a-1:
-            L.append(L[a-2]+L[a-1])
-            a += 1
+        for i in range(3, n+1):
+            L.append(L[i-2]+L[i-1])
         return L[n]

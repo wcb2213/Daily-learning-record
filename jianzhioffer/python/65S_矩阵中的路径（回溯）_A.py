@@ -6,7 +6,7 @@
 
 # 30ms
 # 矩阵中的路径
-####  不计数的回溯法
+####  不计数的回溯法 注意 dict不能设置为全局变量，这样才能在各个情况之间回溯
 class Solution:
     def __init__(self):
         self.isTrue = False

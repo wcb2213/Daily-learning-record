@@ -18,7 +18,7 @@ y_noise = y + 0.8*np.random.randn(len(y))
 # 1 定义误差函数
 def err_f(p,x,y):
     return y-my_f(x,*p)
-## 相当于已知输入 x（准确），输出y_noise(不准确),作用函数f,参数缺失，求得最合适的参数
+## 相当于已知输入 x（准确），输出y_noise(不准确),函数形式三者,但是参数缺失，求最合适的参数
 c, rv = optimize.leastsq(err_f,[1,1,1,1],args=(x,y_noise))
 print(c, rv)# rv 为1~4中的某个值， c为得到的参数
 # 2 不定义误差函数直接拟合
