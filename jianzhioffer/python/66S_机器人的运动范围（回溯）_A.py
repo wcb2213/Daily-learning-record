@@ -23,22 +23,23 @@ class Solution:
         self.search(0, 0)
         return self.flag
     def search(self, i, j):
-        if i != 0 and not (i-1, j) in self.dict and self.block(i-1, j):
+        if i != 0 and (i-1, j) not in self.dict and self.block(i-1, j):
             self.flag += 1
             self.dict[(i-1,j)] =1
             self.search(i-1, j)
-        if j != 0 and not (i, j-1) in self.dict and self.block(i, j-1):
+        if j != 0 and (i, j-1) not in self.dict and self.block(i, j-1):
             self.flag += 1
             self.dict[(i, j-1)]=1
             self.search(i, j-1)
-        if i != self.rows-1 and not (i+1, j) in self.dict and self.block(i+1, j):
+        if i != self.rows-1 and (i+1, j) not in self.dict and self.block(i+1, j):
             self.flag += 1
             self.dict[(i+1, j)]=1
             self.search(i+1, j)
-        if j != self.cols-1 and not (i, j+1) in self.dict and self.block(i, j+1):
+        if j != self.cols-1 and (i, j+1) not in self.dict and self.block(i, j+1):
             self.flag += 1
             self.dict[(i, j+1)]=1
             self.search(i, j+1)
+        return
     def block(self, r, c):
         s = sum(map(int, str(r)+str(c)))
         return s <= self.threshold
