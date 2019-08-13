@@ -10,7 +10,7 @@ class Solution:
         # write code here
         count = 0
         while n:
-            n = n&(n-1)
+            n = n&(n-1) #把一个整数减去1之后与原来的整数做二进制与运算，相当于把这个整数最右边的1变为0
             count += 1
         return count
 

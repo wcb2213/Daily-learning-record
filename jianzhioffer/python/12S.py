@@ -8,10 +8,12 @@
 class Solution:
     def Power(self, base, exponent):
         result = 1
-        if base == 0:
-            return 0
+        if base==0 and exponent==0:
+            raise Exception("无意义")
         if exponent == 0:
             return 1
+        if base==0 and exponent<0:
+            raise Exception("输入错误")
         if exponent < 0:
             for i in range(-exponent):
                 result *= base
@@ -19,3 +21,5 @@ class Solution:
         for i in range(exponent):
             result *= base
         return result
+a = Solution()
+print(a.Power(0,0))
