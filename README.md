@@ -5,15 +5,15 @@ Learning_notes
 Files
 ----
 1. LeetCode<br>
-    * 简单和中等难度（待刷）
+    * 简单和中等难度（待更新）
 2. Matplotlib&SciPy&Pandas<br>
     * Matplotlib
     * SciPy
     * Pandas
 3. algorithm<br>
     * 排序算法代码实现（待更新）
-    * 动态回归总结
-4. jianzhioffer（66题）<br>
+    * 动态回归问题总结
+4. jianzhioffer（完整66题）<br>
     * python
 5. learn_python<br>
     * 学习笔记及各种trick
