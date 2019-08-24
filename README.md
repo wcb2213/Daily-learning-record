@@ -1,4 +1,4 @@
-Daily learning record
+Learning_notes
 ====
 记录学习路上的点滴
 
