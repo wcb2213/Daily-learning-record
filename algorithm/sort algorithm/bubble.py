@@ -53,5 +53,3 @@ def bubble(bubbleList):
 if __name__ == '__main__':
     bubbleList = [3, 4, 1, 2, 5, 8, 0]
     print(bubble(bubbleList))
-
-

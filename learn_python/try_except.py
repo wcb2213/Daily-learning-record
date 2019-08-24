@@ -4,7 +4,7 @@
 # Created on: 2018/10/30
 
 
-##  1
+##  剑指offer 第一题
 class Solution:
     # array 二维列表
     def Find(self, target, array):
