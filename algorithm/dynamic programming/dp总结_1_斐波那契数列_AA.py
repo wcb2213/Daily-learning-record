@@ -5,23 +5,31 @@
 
 
 # ①自顶向下的备忘录法 还是用了递归
-# def f(n):
-#     if n==1 or n==2:
-#         return 1
-#     if dp[n-1] == 0:
-#         dp[n-1] = f(n-1)
-#     if dp[n-2] == 0:
-#         dp[n-2] = f(n-2)
-#     return dp[n-1]+dp[n-2]
-# n = 5
-# dp=[0]*(n+1) ## 辅助存储，避免多次计算
-print(list(map(f, range(1,n+1))))
+# class Solution:
+#     def __init__(self):
+#         self.l = [0,1]+[-1]*38
+#     def Fibonacci(self, n):
+#         # write code here
+#         if n<=1: return n
+#         if self.l[n-1]==-1:
+#             self.l[n-1]=self.Fibonacci(n-1)
+#         if self.l[n-2]==-1:
+#             self.l[n-2]=self.Fibonacci(n-2)
+#         return self.l[n-1]+self.l[n-2]
 
 
-# ②自底向上的动态规划  推荐
+# ②自底向上的动态规划  推荐on+on
 def f2(n):
     # write code here
-    l = [0,1,1]
-    for i in range(3,n+1):
+    l = [0,1]
+    for i in range(2,n+1):
         l.append(l[i-2]+l[i-1])
     return l[n]
+
+# 3优化  on+o1
+def f3(n):
+    if n<=1: return n
+    a, b = 0, 1
+    for i in range(n - 1):
+        a, b = b, a + b
+    return b

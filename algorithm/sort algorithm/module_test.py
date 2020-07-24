@@ -4,8 +4,10 @@
 # Created on: 2019/3/21
 
 
-from bubble import bubble
-bubble([3, 4, 1, 2, 5, 8, 0])
+from bubble import bubble_sort
+
+bubbleList = [3, 4, 1, 2, 5, 8, 0]
+print(bubble_sort(bubbleList))
 
 # bubble
 # [0, 1, 2, 3, 4, 5, 8]
