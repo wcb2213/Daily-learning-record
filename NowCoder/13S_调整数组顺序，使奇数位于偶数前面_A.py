@@ -11,20 +11,21 @@ class Solution:
         # write code here
         if len(array)<=1: return array
         i,j=0,0
-        while i<len(array):
-            if array[i]%2==0:
-                if j == len(array) - 1:
-                    return array
+        while i<=len(array)-1:
+            if array[i]&1==0:
+                if j==len(array)-1:
+                    break
                 j=max(i+1,j+1)
-                while array[j]%2==0:
-                    if j==len(array)-1:
-                        return array
+                while j<=len(array)-1:
+                    if array[j]&1==1:
+                        tmp=array[j]
+                        for a in range(j,i,-1):
+                            array[a]=array[a-1]
+                        array[i]=tmp
+                        break
                     j+=1
-                tmp=array[j]
-                for a in range(j,i,-1):
-                    array[a]=array[a-1]
-                array[i]=tmp
             i+=1
+        return array
     # 调整数组序列 列表生成式
     # def reOrderArray(self, array):
     #     if len(array) == 0:

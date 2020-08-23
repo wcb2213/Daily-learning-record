@@ -16,7 +16,7 @@ class Solution:
         res = list(set(res))
         # sorted 默认 升序
         return sorted(res)
-    def perm(self, ss, res, path):
+    def perm(self, ss, res, path):#res为全局变量
         if ss:
             for i in range(len(ss)):
                 self.perm(ss[:i]+ss[i+1:], res, path+ss[i])

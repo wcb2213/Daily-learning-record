@@ -27,6 +27,7 @@ def big_endian(arr, start, end):
 # 4、排序：使用操作（2），依次取出最大值
 def heap_sort(arr):
     # 无序区大根堆排序
+    # root=（child-1）//2=(len(arr)-1-1)//2=len(arr)//2-1
     first = len(arr) // 2 - 1
 
     # 构成最大堆：利用3堆调整从下到上，从右到左对每个非叶子节点进行调整

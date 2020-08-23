@@ -4,6 +4,7 @@
 # Created on: 2020/7/6
 
 
+# 判断该数组是不是某二叉搜索树的后序遍历
 # 对于输入数组这种情况，使用指针作为下标，避免空间损耗
 class Solution:
     def VerifySquenceOfBST(self, sequence):
