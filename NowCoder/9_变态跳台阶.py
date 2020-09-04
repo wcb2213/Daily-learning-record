@@ -4,7 +4,7 @@
 # Created on: 2019/2/24
 
 
-# 23ms
+#   1
 class Solution:
     def jumpFloorII(self, number):
         # write code here
@@ -16,6 +16,8 @@ class Solution:
             index += 1
         return l[n]
 
+#   2
+class Solution:
     def jumpFloorII(self, number):
         # write code here
         if number <= 0:

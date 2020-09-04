@@ -12,6 +12,7 @@
 #     def __init__(self, x):
 #         self.val = x
 #         self.next = None
+#   1
 class Solution:
     # 返回合并后列表
     def Merge(self, pHead1, pHead2):
@@ -32,7 +33,7 @@ class Solution:
             p.next=pHead2
         return head.next
 
-## 递归版本
+#   2 递归版本
 # 时间复杂度：O(m+n)
 # 空间复杂度：O(m+n),每一次递归，递归栈都会保存一个变量，最差情况会保存(m+n)个变量
 class Solution:

@@ -4,9 +4,9 @@
 # Created on: 2020/7/5
 
 
-class Solution:
-    # matrix类型为二维列表，需要返回列表
+# matrix类型为二维列表，需要返回列表
 #   1 分治
+class Solution:
     def printMatrix(self, matrix):
         # write code here
         def trun(M):
@@ -24,8 +24,8 @@ class Solution:
             res += matrix.pop(0)
             if not matrix: return res
             matrix = trun(matrix)
-
- #  2 直译
+#  2 直译
+class Solution:
     def printMatrix(self, matrix):
         # write code here
         l,r,t,b,res=0,len(matrix[0])-1,0,len(matrix)-1,[]
